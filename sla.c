@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//n sei o que ta fazendo
 int main () {
 	
 	int cont,vetor[10];
