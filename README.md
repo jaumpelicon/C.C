@@ -1,3 +1,3 @@
-# C.C
+# College-codes
 Códigos feitos ao decorrer da graduação
 Utlizem com sabedoria... 
