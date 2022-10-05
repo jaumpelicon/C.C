@@ -1,0 +1,8 @@
+Caso de teste 1:
+conjunto = {1,2,3,....,20} 
+numro procurado pela soma dos subconjuntos= 52
+tempo de execução = 6.6790173053741455
+
+
+
+	
