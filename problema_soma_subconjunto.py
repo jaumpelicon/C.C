@@ -1,3 +1,4 @@
+import time
 #Inserção dos itens do conjunto
 conjunto = []
 item = input('Insira um elemento no conjunto ou digite "-" para parar de inserir\n')
@@ -18,6 +19,7 @@ conjunto = list(conjunto)
 tamExp = pow(2,len(conjunto))
 aux = []
 
+start = time.time()
 #Percorrendo o conjunto e achando o conjunto das partes
 for i in range(tamExp):
     for j in range(len(conjunto)):
@@ -27,6 +29,13 @@ for i in range(tamExp):
     for k in range(len(aux)):
         resposta = resposta + aux[k]
 #Verificando se a soma de cada conjunto das partes resulta no numero buscado
-    if(numero == resposta):
-            print("Achei a soma no subconjunto",aux)
-    aux.clear()        
+    if(numero == resposta ):
+        if(len(aux) != 1):
+            print("Achei o numero ",numero, "na soma no subconjunto",aux)
+    aux.clear()
+
+print("O tempo utilizado pra executar esse programa foi de:")
+
+end = time.time()
+
+print(end - start)        
